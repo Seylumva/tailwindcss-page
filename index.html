@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-slate-800 text-slate-200 flex flex-col justify-between min-h-screen">
+  <nav class="p-6 bg-slate-900 shadow-2xl relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl">Random site</h1>
+      <label class="w-7 h-6 bg-none flex flex-col justify-center gap-2 cursor-pointer lg:hidden" for="toggle">
+        <div class="w-full h-0.5 bg-slate-100"></div>
+        <div class="w-full h-0.5 bg-slate-100"></div>
+        <div class="w-full h-0.5 bg-slate-100"></div>
+      </label>
+      <input class="hidden peer" type="checkbox" name="toggle" id="toggle">
+      <div
+        class="w-full p-6 absolute left-0 bg-slate-700 -z-10 top-full -translate-y-full peer-checked:translate-y-0 transition lg:static lg:z-0 lg:w-fit lg:p-0 lg:bg-inherit lg:translate-y-0 lg:transition-none">
+        <ul class="container mx-auto flex flex-col gap-6 lg:flex-row lg:gap-12 lg">
+          <li><a class="inline-block border-b-2 border-transparent hover:border-b-2 hover:border-slate-300 transition"
+              href="#">Home</a></li>
+          <li><a class="inline-block border-b-2 border-transparent hover:border-b-2 hover:border-slate-300 transition"
+              href="#">About</a></li>
+          <li><a class="inline-block border-b-2 border-transparent hover:border-b-2 hover:border-slate-300 transition"
+              href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="p-6 w-full">
+    <div class="container mx-auto">
+      <h2 class="text-5xl leading-normal text- lg:text-6xl text-center mb-6">Welcome to my Tailwind CSS Page</h2>
+      <p class="text-lg lg:text-2xl text-center">Press <span
+          class="bg-slate-900 inline-block py-2 px-4 rounded-md mx-1">F12</span>
+        to
+        see how
+        it
+        was
+        created and
+        structured.</p>
+    </div>
+  </main>
+  <footer class="text-center p-6 bg-slate-900">Copyright &copy; 2022 nemil.io All rights reserved.</footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
